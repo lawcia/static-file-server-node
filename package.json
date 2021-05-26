@@ -1,7 +1,7 @@
 {
-  "name": "ms-learn-appservice",
+  "name": "static_file_server_node",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple static file server use to serve html, css and javascript files",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -9,5 +9,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
