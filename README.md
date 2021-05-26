@@ -1,4 +1,4 @@
-#Static File Server
+# Static File Server
 
 A node server, that can be used to serve static html, css and javascript files.
 
