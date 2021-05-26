@@ -1,11 +1,11 @@
-const http = require('http');
-const fs = require('fs');
+const http = require("http");
+const fs = require("fs");
 const port = process.env.PORT || 8080;
 
 http.createServer(function (request, response) {
-  if(!/^\/(public|favicon.ico$)/.test(request.url)){
+  if (!/^\/(public|favicon.ico$)/.test(request.url)) {
     response.writeHead(400);
-    response.end(JSON.stringify({message: 'not authorised'}));
+    response.end(JSON.stringify({ message: "not authorised" }));
     return;
   }
   fs.readFile(__dirname + request.url, function (err, data) {
